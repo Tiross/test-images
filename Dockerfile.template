@@ -1,0 +1,6 @@
+
+FROM perl:${VERSION}
+
+RUN apt-get update \\
+ && apt-get install -y --no-install-recommends libdist-zilla-perl \\
+ && rm -rf /var/lib/apt/lists/*
